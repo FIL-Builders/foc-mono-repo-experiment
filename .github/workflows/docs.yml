@@ -1,0 +1,13 @@
+name: Docs
+
+on:
+  pull_request:
+
+jobs:
+  diff-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: git fetch origin "${{ github.base_ref }}" && git diff --check "origin/${{ github.base_ref }}...HEAD"
