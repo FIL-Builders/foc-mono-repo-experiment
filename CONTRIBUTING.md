@@ -9,7 +9,7 @@ git diff origin/main...HEAD
 git status --short
 ```
 
-The last command prints this PR's intended changes for scope review. After #4 pins Filecoin Pin, use its recorded Node/pnpm versions and run:
+The diff command prints this PR's intended changes for scope review. After #4 pins Filecoin Pin, use its recorded Node/pnpm versions and run:
 
 ```sh
 pnpm install --frozen-lockfile
