@@ -5,7 +5,7 @@ Until Filecoin Pin is imported, this repository is governance-only. Validate a d
 ```sh
 git fetch origin main
 git diff --check origin/main...HEAD
-git diff -- README.md CONTRIBUTING.md SECURITY.md AGENTS.md docs/adr
+git diff origin/main...HEAD -- README.md CONTRIBUTING.md SECURITY.md AGENTS.md docs/adr
 ```
 
 The last command prints this PR's intended changes for scope review. After #4 pins Filecoin Pin, use its recorded Node/pnpm versions and run:
