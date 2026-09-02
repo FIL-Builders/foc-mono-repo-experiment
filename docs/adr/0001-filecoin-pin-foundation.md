@@ -25,7 +25,7 @@ Use the selected Filecoin Pin baseline's Node and pnpm policy; the current track
 
 ## Custody, networks, telemetry
 
-No adapter stores, forwards, or logs signer material. Signers and secrets remain caller-controlled; redact credentials, tokens, private keys, signatures, and payment identifiers from output, errors, telemetry, and issue reports. Default network selection and every irreversible or paid action must be explicit in the invoking surface, show the target network and cost/side effect before execution, and require an affirmative user action. Calibration, mocks, and devnet are not Mainnet evidence.
+No adapter stores, forwards, or logs signer material. Signers and secrets remain caller-controlled; redact credentials, tokens, private keys, signatures, and payment credentials from output, errors, telemetry, and issue reports. Default network selection and every irreversible or paid action must be explicit in the invoking surface, show the target network and cost/side effect before execution, and require an affirmative user action. Calibration, mocks, and devnet are not Mainnet evidence.
 
 Telemetry is opt-in where the inherited baseline permits it, carries no file contents or secrets, and must be documented before enabling new collection. Disable telemetry in tests and provide an opt-out in any new surface.
 
